@@ -9,7 +9,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-serif font-bold mb-4">
-              Élégance<span className="text-gold">Events</span>
+              Event<span className="text-gold">ivo</span>
             </h3>
             <p className="text-ivory/70 mb-6">
               Creating unforgettable moments with elegance and style. We plan, we decorate, you celebrate.
@@ -109,7 +109,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-ivory/10 mt-12 pt-8 text-center text-ivory/50 text-sm">
-          <p>&copy; {new Date().getFullYear()} Élégance Events. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Eventivo. All rights reserved.</p>
         </div>
       </div>
     </footer>

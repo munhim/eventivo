@@ -24,7 +24,7 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <span className="text-2xl font-serif font-bold text-foreground">
-              Élégance<span className="text-gold">Events</span>
+              Event<span className="text-gold">ivo</span>
             </span>
           </Link>
 

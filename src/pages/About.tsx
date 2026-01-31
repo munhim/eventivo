@@ -35,7 +35,7 @@ const About = () => {
                   <span className="text-gold">Moments</span>
                 </h1>
                 <p className="text-muted-foreground text-lg mb-6">
-                  Élégance Events is a premier event planning and decoration agency dedicated to turning your most cherished moments into extraordinary celebrations. With over a decade of experience, we've helped thousands of clients create memories that last a lifetime.
+                  Eventivo is a premier event planning and decoration agency dedicated to turning your most cherished moments into extraordinary celebrations. With over a decade of experience, we've helped thousands of clients create memories that last a lifetime.
                 </p>
                 <p className="text-muted-foreground">
                   Our team of passionate designers and planners combines creativity with meticulous attention to detail, ensuring every event we touch becomes a masterpiece. From intimate gatherings to grand celebrations, we bring your vision to life with elegance and style.
@@ -98,7 +98,7 @@ const About = () => {
                 A Passion for Perfection
               </h2>
               <p className="text-muted-foreground text-lg mb-6">
-                Founded in 2014, Élégance Events began as a small dream to help couples create their perfect wedding day. What started as a one-woman operation has grown into a full-service event planning and decoration agency, serving clients across the country.
+                Founded in 2014, Eventivo began as a small dream to help couples create their perfect wedding day. What started as a one-woman operation has grown into a full-service event planning and decoration agency, serving clients across the country.
               </p>
               <p className="text-muted-foreground text-lg">
                 Our philosophy is simple: every event should be as unique as the people celebrating it. We don't believe in cookie-cutter designs or one-size-fits-all solutions. Instead, we take the time to understand your vision, your style, and your story, crafting celebrations that truly reflect who you are.
