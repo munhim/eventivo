@@ -15,14 +15,54 @@ import heroImage from "@/assets/hero-wedding.jpg";
 const categories = ["All", "Weddings", "Birthdays", "Showers", "Private Events"];
 
 const portfolioItems = [
-  { src: heroImage, category: "Weddings", title: "Elegant Wedding Ceremony" },
-  { src: birthdayImage, category: "Birthdays", title: "Pink & Gold Birthday" },
-  { src: weddingImage, category: "Weddings", title: "Classic White Wedding" },
-  { src: privateImage, category: "Private Events", title: "Anniversary Dinner" },
-  { src: portfolio1, category: "Showers", title: "Luxury Bridal Shower" },
-  { src: portfolio2, category: "Showers", title: "Sweet Baby Shower" },
-  { src: portfolio3, category: "Private Events", title: "Romantic Engagement" },
-  { src: portfolio4, category: "Private Events", title: "Golden Anniversary" },
+  { 
+    src: heroImage, 
+    category: "Weddings", 
+    title: "Elegant Garden Wedding",
+    description: "A stunning outdoor ceremony at Serena Hotel, Islamabad with 350 guests and floral arch arrangements."
+  },
+  { 
+    src: birthdayImage, 
+    category: "Birthdays", 
+    title: "Pink & Gold Birthday",
+    description: "A magical first birthday celebration in Lahore featuring custom balloon installations and dessert tables."
+  },
+  { 
+    src: weddingImage, 
+    category: "Weddings", 
+    title: "Royal Baraat Ceremony",
+    description: "Traditional wedding decor at Pearl Continental, Karachi with elegant lighting and stage design."
+  },
+  { 
+    src: privateImage, 
+    category: "Private Events", 
+    title: "Silver Anniversary Dinner",
+    description: "An intimate 25th anniversary celebration at Monal Restaurant, Islamabad for 80 guests."
+  },
+  { 
+    src: portfolio1, 
+    category: "Showers", 
+    title: "Luxury Bridal Shower",
+    description: "A glamorous bridal shower in DHA Lahore with rose gold theme and personalized favors."
+  },
+  { 
+    src: portfolio2, 
+    category: "Showers", 
+    title: "Sweet Baby Shower",
+    description: "A pastel-themed baby shower celebration in F-7 Islamabad with custom cake and photo booth."
+  },
+  { 
+    src: portfolio3, 
+    category: "Private Events", 
+    title: "Romantic Engagement",
+    description: "A dreamy engagement setup at Margalla Hills with fairy lights and floral canopy."
+  },
+  { 
+    src: portfolio4, 
+    category: "Private Events", 
+    title: "Golden Anniversary",
+    description: "A 50th anniversary gala at Marriott Islamabad with gold decor and live classical music."
+  },
 ];
 
 const PortfolioPage = () => {
@@ -96,13 +136,16 @@ const PortfolioPage = () => {
                     alt={item.title}
                     className="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/70 transition-colors duration-300 flex flex-col items-center justify-center">
-                    <span className="text-ivory font-serif text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center px-4">
+                  <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/80 transition-colors duration-300 flex flex-col items-center justify-center p-4">
+                    <span className="text-ivory font-serif text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
                       {item.title}
                     </span>
-                    <span className="text-gold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-2">
+                    <span className="text-gold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-1">
                       {item.category}
                     </span>
+                    <p className="text-ivory/80 text-xs text-center mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 leading-relaxed">
+                      {item.description}
+                    </p>
                   </div>
                 </motion.div>
               ))}
