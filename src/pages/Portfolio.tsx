@@ -156,20 +156,36 @@ const PortfolioPage = () => {
       <Header />
       <main className="pt-20">
         {/* Hero */}
-        <section className="section-padding bg-secondary">
-          <div className="container-custom text-center">
+        <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0">
+            <motion.img
+              initial={{ scale: 1.1 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 1.5 }}
+              src={portfolio1}
+              alt="Event portfolio showcase"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-charcoal/50 to-charcoal/70" />
+          </div>
+          <div className="relative z-10 container-custom text-center text-ivory">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
             >
-              <span className="text-gold text-sm font-medium tracking-widest uppercase">
+              <motion.span 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                className="inline-block text-gold text-sm font-medium tracking-widest uppercase mb-4"
+              >
                 Our Work
-              </span>
-              <h1 className="text-4xl md:text-5xl font-serif font-bold mt-3 mb-6">
+              </motion.span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6">
                 Portfolio
               </h1>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              <p className="text-ivory/90 text-lg max-w-2xl mx-auto">
                 Browse through our collection of beautifully decorated events and see how we transform spaces into magical celebrations.
               </p>
             </motion.div>

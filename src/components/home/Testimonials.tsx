@@ -5,32 +5,36 @@ import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
+    name: "Ayesha Khan",
     role: "Bride",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
     content:
-      "Élégance Events made our wedding day absolutely magical! Every detail was perfect, from the stunning floral arrangements to the elegant table settings. They truly understood our vision and brought it to life beyond our wildest dreams.",
+      "Eventivo made our wedding day absolutely magical! Every detail was perfect, from the stunning floral arrangements to the elegant table settings. They truly understood our vision and brought it to life beyond our wildest dreams.",
     rating: 5,
   },
   {
     id: 2,
-    name: "Michael Chen",
+    name: "Ahmed Raza",
     role: "Birthday Celebration",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     content:
       "My daughter's 5th birthday party was a fairy tale come true! The team created an enchanting princess theme that left all the kids and parents in awe. Professional, creative, and so attentive to every detail.",
     rating: 5,
   },
   {
     id: 3,
-    name: "Emily Rodriguez",
+    name: "Fatima Malik",
     role: "Anniversary Party",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
     content:
-      "Our 25th anniversary celebration was absolutely stunning. The gold and white decor was sophisticated and romantic. Élégance Events handled everything with such grace and professionalism. Highly recommended!",
+      "Our 25th anniversary celebration was absolutely stunning. The gold and white decor was sophisticated and romantic. Eventivo handled everything with such grace and professionalism. Highly recommended!",
     rating: 5,
   },
   {
     id: 4,
-    name: "Jennifer Williams",
+    name: "Sana Ali",
     role: "Bridal Shower",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face",
     content:
       "The bridal shower they planned for my best friend was Pinterest-perfect! Beautiful balloon installations, elegant table settings, and the most gorgeous flower wall. Everyone was asking for their contact information!",
     rating: 5,
@@ -91,13 +95,20 @@ export function Testimonials() {
                 "{testimonials[currentIndex].content}"
               </p>
 
-              <div>
-                <p className="font-serif font-semibold text-xl">
-                  {testimonials[currentIndex].name}
-                </p>
-                <p className="text-muted-foreground">
-                  {testimonials[currentIndex].role}
-                </p>
+              <div className="flex flex-col items-center gap-4">
+                <img
+                  src={testimonials[currentIndex].image}
+                  alt={testimonials[currentIndex].name}
+                  className="w-16 h-16 rounded-full object-cover border-2 border-gold"
+                />
+                <div className="text-center">
+                  <p className="font-serif font-semibold text-xl">
+                    {testimonials[currentIndex].name}
+                  </p>
+                  <p className="text-muted-foreground">
+                    {testimonials[currentIndex].role}
+                  </p>
+                </div>
               </div>
             </motion.div>
           </AnimatePresence>

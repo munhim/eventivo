@@ -34,10 +34,10 @@ export function Header() {
               <Link
                 key={link.name}
                 to={link.href}
-                className={`text-sm font-medium transition-colors hover:text-gold ${
+                className={`text-sm font-bold transition-colors hover:text-gold ${
                   location.pathname === link.href
                     ? "text-gold"
-                    : "text-muted-foreground"
+                    : "text-foreground"
                 }`}
               >
                 {link.name}
@@ -78,10 +78,10 @@ export function Header() {
                   key={link.name}
                   to={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`text-lg font-medium transition-colors hover:text-gold ${
+                  className={`text-lg font-bold transition-colors hover:text-gold ${
                     location.pathname === link.href
                       ? "text-gold"
-                      : "text-muted-foreground"
+                      : "text-foreground"
                   }`}
                 >
                   {link.name}
