@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CTAForm } from "@/components/home/CTAForm";
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 import birthdayImage from "@/assets/service-birthday.jpg";
 import weddingImage from "@/assets/service-wedding.jpg";
 import privateImage from "@/assets/service-private.jpg";
@@ -50,6 +50,48 @@ const services = [
       "Holiday parties",
       "Intimate dinner parties",
     ],
+  },
+];
+
+const pricingPackages = [
+  {
+    name: "The Intimate Box",
+    description: "Perfect for birthdays, bridal showers, and small private dinners where every detail matters.",
+    features: [
+      "Standard Floral Arrangements",
+      "Table Styling & Linens",
+      "Personalized Photo Booth",
+      "Full Setup & Cleanup",
+    ],
+    price: "PKR 85,000",
+    buttonText: "Book Intimate",
+    popular: false,
+  },
+  {
+    name: "Grand Celebration",
+    description: "Our most popular choice for weddings and large family gatherings looking for a premium feel.",
+    features: [
+      "Custom Floral Installations",
+      "Luxury Lounge Rentals",
+      "Themed Backdrop Design",
+      "Dedicated Event Coordinator",
+    ],
+    price: "PKR 220,000",
+    buttonText: "Select Grand",
+    popular: true,
+  },
+  {
+    name: "Bespoke Artistry",
+    description: "A fully customized planning experience for those who want a one-of-a-kind themed masterpiece.",
+    features: [
+      "Exclusive Theme Development",
+      "Full Vendor Management",
+      "Custom Furniture & Decor",
+      "On-site Creative Director",
+    ],
+    price: "Custom",
+    buttonText: "Get a Quote",
+    popular: false,
   },
 ];
 
@@ -105,6 +147,68 @@ const ServicesPage = () => {
                 From concept to completion, we provide full-service event planning and decoration that turns your vision into an unforgettable reality.
               </p>
             </motion.div>
+          </div>
+        </section>
+
+        {/* Pricing Packages */}
+        <section className="section-padding bg-secondary">
+          <div className="container-custom">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-12"
+            >
+              <span className="text-gold text-sm font-medium tracking-widest uppercase">
+                Pricing
+              </span>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold mt-3">
+                Choose Your Package
+              </h2>
+            </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {pricingPackages.map((pkg, index) => (
+                <motion.div
+                  key={pkg.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className={`relative bg-card rounded-2xl p-8 text-center shadow-soft ${
+                    pkg.popular ? "ring-2 ring-gold" : ""
+                  }`}
+                >
+                  {pkg.popular && (
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                      <span className="bg-gold text-ivory text-xs font-medium px-4 py-1 rounded-full flex items-center gap-1">
+                        <Sparkles className="w-3 h-3" />
+                        Most Popular
+                      </span>
+                    </div>
+                  )}
+                  <h3 className="text-2xl font-serif font-bold mb-3">{pkg.name}</h3>
+                  <p className="text-muted-foreground text-sm mb-6">{pkg.description}</p>
+                  <div className="w-12 h-px bg-gold/30 mx-auto mb-6" />
+                  <ul className="space-y-3 mb-8 text-left">
+                    {pkg.features.map((feature) => (
+                      <li key={feature} className="flex items-start gap-2 text-sm">
+                        <span className="text-gold mt-1">•</span>
+                        <span className="text-muted-foreground">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="text-3xl font-serif font-bold mb-6">{pkg.price}</p>
+                  <Button 
+                    variant={pkg.popular ? "gold" : "outline"} 
+                    className="w-full"
+                    asChild
+                  >
+                    <Link to="/contact">{pkg.buttonText}</Link>
+                  </Button>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </section>
 
