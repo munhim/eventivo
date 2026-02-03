@@ -2,17 +2,24 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-wedding.jpg";
+import heroVideo from "@/assets/Wan_Video_Generate_A cinematic hero video for a luxury Event Planning & Decorati.mp4";
+
 
 export function Hero() {
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Elegant wedding decoration"
-          className="w-full h-full object-cover"
-        />
+       <video
+           className="w-full h-full object-cover"
+           src={heroVideo}
+           autoPlay
+           loop
+           muted
+           playsInline
+           preload="auto"
+/>
+
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-charcoal/30 to-charcoal/60" />
       </div>
 
