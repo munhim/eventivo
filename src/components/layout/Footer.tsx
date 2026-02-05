@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Facebook, Mail, Phone, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -16,25 +16,22 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/eventivo_events?utm_source=qr&igsh=b2czbjU4ejdwM3Zu"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-ivory/10 flex items-center justify-center hover:bg-gold transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram size={18} />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/share/1GrTGfqrHK/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-ivory/10 flex items-center justify-center hover:bg-gold transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook size={18} />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-ivory/10 flex items-center justify-center hover:bg-gold transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter size={18} />
               </a>
             </div>
           </div>

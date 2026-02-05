@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CTAForm } from "@/components/home/CTAForm";
-import { Award, Users, Calendar, Heart } from "lucide-react";
+import { Award, Users, Calendar, Heart, Instagram, Facebook } from "lucide-react";
 import heroImage from "@/assets/hero-wedding.jpg";
 
 const stats = [
@@ -10,6 +10,34 @@ const stats = [
   { icon: Users, value: "1000+", label: "Happy Clients" },
   { icon: Award, value: "10+", label: "Years Experience" },
   { icon: Heart, value: "100%", label: "Satisfaction Rate" },
+];
+
+const teamMembers = [
+  {
+    name: "Munhim",
+    role: "Founder & Lead Event Planner",
+    description: "Leads every project with big-picture vision and calm, detailed planning from start to finish.",
+  },
+  {
+    name: "Afrah",
+    role: "Lead Decor & Styling",
+    description: "Crafts elegant, photo-ready setups with a love for color, texture, and tiny details.",
+  },
+  {
+    name: "Raheem",
+    role: "Operations & Logistics",
+    description: "Makes sure every vendor, timeline, and setup runs smoothly behind the scenes.",
+  },
+  {
+    name: "Abdullah",
+    role: "Client Experience Manager",
+    description: "Keeps communication warm, clear, and easy so you always feel supported.",
+  },
+  {
+    name: "Inam",
+    role: "Lighting & Ambience Specialist",
+    description: "Designs lighting and mood so every space feels magical in person and on camera.",
+  },
 ];
 
 const About = () => {
@@ -103,6 +131,88 @@ const About = () => {
               <p className="text-muted-foreground text-lg">
                 Our philosophy is simple: every event should be as unique as the people celebrating it. We don't believe in cookie-cutter designs or one-size-fits-all solutions. Instead, we take the time to understand your vision, your style, and your story, crafting celebrations that truly reflect who you are.
               </p>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Meet the Team */}
+        <section className="section-padding bg-secondary">
+          <div className="container-custom">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-12"
+            >
+              <span className="text-gold text-sm font-medium tracking-widest uppercase">
+                Our Team
+              </span>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold mt-3">
+                Meet the People Behind the Magic
+              </h2>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {teamMembers.slice(0, 3).map((member, index) => (
+                <motion.div
+                  key={member.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="bg-background rounded-2xl p-8 text-center shadow-soft"
+                >
+                  <h3 className="text-2xl font-serif font-bold mb-2">{member.name}</h3>
+                  <p className="text-gold font-medium mb-4">{member.role}</p>
+                  <p className="text-muted-foreground">{member.description}</p>
+                </motion.div>
+              ))}
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 max-w-2xl mx-auto">
+              {teamMembers.slice(3).map((member, index) => (
+                <motion.div
+                  key={member.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: (index + 3) * 0.1 }}
+                  className="bg-background rounded-2xl p-8 text-center shadow-soft"
+                >
+                  <h3 className="text-2xl font-serif font-bold mb-2">{member.name}</h3>
+                  <p className="text-gold font-medium mb-4">{member.role}</p>
+                  <p className="text-muted-foreground">{member.description}</p>
+                </motion.div>
+              ))}
+            </div>
+
+            {/* Social Links */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="flex justify-center gap-4 mt-10"
+            >
+              <a
+                href="https://www.instagram.com/eventivo_events?utm_source=qr&igsh=b2czbjU4ejdwM3Zu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-charcoal flex items-center justify-center hover:bg-gold transition-colors text-ivory"
+                aria-label="Instagram"
+              >
+                <Instagram size={22} />
+              </a>
+              <a
+                href="https://www.facebook.com/share/1GrTGfqrHK/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-charcoal flex items-center justify-center hover:bg-gold transition-colors text-ivory"
+                aria-label="Facebook"
+              >
+                <Facebook size={22} />
+              </a>
             </motion.div>
           </div>
         </section>
