@@ -1,7 +1,8 @@
 import blogLuxuryEvent from "@/assets/blog-luxury-event.jpg";
 import blogBabyShower from "@/assets/blog-baby-shower.jpg";
 import blogEventMistakes from "@/assets/blog-event-mistakes.jpg";
-import blogBirthdayTheme from "@/assets/blog-birthday-theme.jpg";
+import blogBirthdayTheme from "@/assets/blog-birthday-theme-v2.jpg";
+import blogWeddingTrends from "@/assets/blog-wedding-trends.jpg";
 
 export interface BlogPost {
   id: number;
@@ -25,7 +26,7 @@ export const blogPosts: BlogPost[] = [
       "Luxury isn't about how much you spend — it's about how intentional you are. Learn how to create a premium experience while staying financially smart.",
     image: blogLuxuryEvent,
     category: "Luxury Events",
-    date: "February 10, 2026",
+    date: "February 12, 2026",
     readTime: "12 min read",
     slug: "luxury-event-on-a-budget",
     author: "Afrah Syed",
@@ -165,7 +166,7 @@ Planning a stunning luxury event on a budget isn't about cutting corners — it'
       "Celebrating the arrival of a new baby is one of life's most joyous occasions. Discover trending themes and decoration ideas for an unforgettable baby shower.",
     image: blogBabyShower,
     category: "Baby Showers",
-    date: "February 5, 2026",
+    date: "February 12, 2026",
     readTime: "15 min read",
     slug: "baby-shower-decoration-ideas",
     author: "Abdur Raheem Shaikh",
@@ -280,7 +281,7 @@ Remember, the best baby shower decorations tell a story, create atmosphere, and 
       "Most event failures are not caused by a lack of creativity — they happen because of overlooked fundamentals. Here are five mistakes you should actively avoid.",
     image: blogEventMistakes,
     category: "Tips & Guides",
-    date: "January 28, 2026",
+    date: "February 12, 2026",
     readTime: "8 min read",
     slug: "common-event-planning-mistakes",
     author: "Abdul Munhim Hussain",
@@ -371,7 +372,7 @@ Exceptional event planning does more than organize gatherings. **It creates mome
       "The secret to a memorable celebration? Choosing the perfect theme that ties everything together. This guide walks you through proven ideas to select the right theme.",
     image: blogBirthdayTheme,
     category: "Birthdays",
-    date: "January 20, 2026",
+    date: "February 12, 2026",
     readTime: "10 min read",
     slug: "choose-perfect-birthday-theme",
     author: "Inam Ullah Shaikh",
@@ -448,5 +449,85 @@ Choosing the perfect birthday theme doesn't have to be stressful. Start with und
 Most importantly, choose a theme that brings joy to the birthday person and creates lasting memories for all attendees.
 
 **Remember, the perfect theme isn't necessarily the most expensive or elaborate. It's the one that authentically celebrates the person you're honoring while creating an atmosphere where everyone feels welcome and excited to participate.**`,
+  },
+  {
+    id: 5,
+    title: "Top Wedding Decoration Trends in 2026",
+    excerpt:
+      "Couples are looking for meaningful designs that reflect their personality, culture, and shared story. Discover the top wedding decoration trends shaping 2026.",
+    image: blogWeddingTrends,
+    category: "Weddings",
+    date: "February 12, 2026",
+    readTime: "10 min read",
+    slug: "wedding-decoration-trends-2026",
+    author: "Abdullah Aslam",
+    authorRole: "Client Experience Manager",
+    content: `Wedding planning in 2026 is more creative, immersive, and personalized than ever before. Couples are no longer satisfied with standard décor packages; instead, they are looking for meaningful designs that reflect their personality, culture, and shared story. From sustainable concepts to technology-driven installations, decoration on wedding celebrations has evolved into an artistic experience. Whether couples are hiring professional wedding planning services or working closely with a wedding coordinator planner, this year's trends focus on blending elegance with innovation to create unforgettable wedding events and a magical wedding day.
+
+## Sustainable & Eco-Conscious Concepts
+
+Sustainability continues to dominate wedding planning trends in 2026. Modern couples are mindful of their environmental impact and are incorporating eco-friendly elements into every aspect of their wedding. From biodegradable confetti to reusable floral arrangements, sustainable decoration setups prove that style and responsibility can coexist beautifully.
+
+Professional wedding coordinator services are helping couples source local flowers, organic fabrics, and recyclable materials. Potted plants are replacing cut flowers, and décor elements are often repurposed from ceremony to reception. This thoughtful wedding planning approach not only reduces waste but also adds authenticity and warmth to the wedding day.
+
+## Immersive & Interactive Installations
+
+In 2026, wedding events are designed to engage guests rather than simply impress them. Interactive décor installations are becoming central features of modern celebrations. Couples are introducing live art stations, digital message walls, and immersive projection mapping that transforms ordinary venues into dreamlike spaces.
+
+A skilled wedding coordinator planner ensures these installations integrate seamlessly into the overall theme. Interactive lighting, custom monograms projected onto dance floors, and personalized sound-and-light shows elevate the decoration on wedding venues, making each wedding day feel unique and memorable.
+
+## Statement Ceiling Designs
+
+Ceiling décor is one of the most dramatic trends shaping wedding planning this year. Rather than focusing only on tables and centerpieces, couples are transforming entire spaces from top to bottom. Hanging floral chandeliers, suspended greenery tunnels, and cascading drapery create breathtaking visual impact.
+
+Because of the complexity of these designs, many couples rely on wedding planning services and experienced wedding coordinator services to execute them safely and beautifully. The result is a fully immersive atmosphere where guests are surrounded by elegance from every angle.
+
+## Bold Color Palettes & Expressive Themes
+
+Neutral tones are stepping aside to make room for bold and expressive color schemes. Jewel tones such as emerald green, royal blue, and deep burgundy are trending, often paired with metallic accents like gold and copper. These vibrant hues redefine decoration on wedding celebrations and add personality to both traditional and modern venues.
+
+Creative wedding planning now encourages couples to embrace unconventional combinations. A wedding coordinator planner may suggest layering textures and colors to add depth and dimension, ensuring that the wedding day aesthetic stands out in photos and in memory.
+
+## Minimalist Luxury
+
+While bold designs are trending, minimalist luxury is equally popular. Clean lines, monochromatic palettes, and intentional décor placement create sophisticated wedding events that feel refined and modern. In this approach to wedding planning, every decorative element serves a purpose.
+
+Wedding planning services often recommend fewer but higher-quality pieces — such as sculptural floral arrangements or statement lighting fixtures. This creates an atmosphere of elegance without overwhelming the venue. The simplicity enhances the emotional focus of the wedding day while maintaining visual appeal.
+
+## Personalized Wedding Shower Decorations
+
+Pre-wedding celebrations are also receiving creative upgrades in 2026. Couples are investing in customized wedding shower decorations that align with the overall theme of their upcoming ceremony. From coordinated color schemes to personalized signage and interactive games, these details strengthen the connection between wedding events.
+
+Wedding coordinator services frequently assist with these celebrations, ensuring consistency in style and branding throughout the entire wedding planning journey. Personalized wedding shower decorations not only build excitement but also create memorable moments for close family and friends.
+
+## Vintage & Modern Fusion
+
+Blending old and new continues to influence decoration on wedding trends. Antique furniture, heirloom tableware, and vintage frames are being paired with contemporary lighting and sleek design elements. This fusion style creates a timeless atmosphere that honors tradition while embracing innovation.
+
+A professional wedding coordinator planner plays a crucial role in balancing these contrasting elements. Through thoughtful wedding planning, vintage charm and modern sophistication coexist harmoniously, elevating the wedding day experience.
+
+## Technology-Enhanced Ambiance
+
+Technology is transforming wedding planning in subtle yet powerful ways. Smart lighting systems, LED dance floors, and augmented reality photo booths are becoming popular additions to wedding events. These innovations enhance the decoration on wedding venues without overshadowing the romantic atmosphere.
+
+Wedding planning services now collaborate with tech experts to create customized lighting scenes that shift throughout the wedding day — from soft and romantic during dinner to energetic and vibrant for the reception. This dynamic environment keeps guests engaged and adds excitement to the celebration.
+
+## Grand Entrance & Exit Designs
+
+The entrance and exit moments of a wedding day are receiving more decorative attention than ever. Couples are designing elaborate floral arches, illuminated pathways, and dramatic sparkler exits. These statement features elevate the overall wedding experience and create stunning photo opportunities.
+
+Wedding coordinator services carefully manage timing and setup to ensure these moments unfold flawlessly. Thoughtful wedding planning ensures that every guest feels the emotional impact of these grand transitions.
+
+## Multi-Sensory Experiences
+
+In 2026, decoration on wedding celebrations goes beyond visuals. Couples are incorporating scents, textures, and soundscapes to create fully immersive wedding events. Signature fragrances, live instrumental music, and tactile table settings enhance the atmosphere and deepen emotional connections.
+
+Wedding planning services are increasingly focusing on these sensory details, recognizing that a memorable wedding day engages all five senses. This holistic approach transforms décor into an experience rather than just a backdrop.
+
+## Conclusion
+
+The top wedding decoration trends of 2026 emphasize creativity, personalization, and immersive design. From sustainable concepts to technology-driven wedding events, modern couples are redefining what decoration on wedding celebrations can achieve. Whether guided by professional wedding planning services, supported by experienced wedding coordinator services, or working closely with a dedicated wedding coordinator planner, thoughtful wedding planning is the key to transforming ideas into reality.
+
+**Ultimately, the goal is simple: to create a wedding day that reflects love, personality, and unforgettable beauty. With the right decorative choices and expert coordination, every celebration can become a timeless masterpiece.**`,
   },
 ];
