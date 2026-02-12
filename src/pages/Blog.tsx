@@ -2,58 +2,9 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { Calendar, Clock, ArrowRight } from "lucide-react";
-import portfolio1 from "@/assets/portfolio-1.jpg";
-import portfolio2 from "@/assets/portfolio-2.jpg";
+import { Calendar, Clock, ArrowRight, User } from "lucide-react";
+import { blogPosts } from "@/data/blogPosts";
 import portfolio3 from "@/assets/portfolio-3.jpg";
-import portfolio4 from "@/assets/portfolio-4.jpg";
-
-const blogPosts = [
-  {
-    id: 1,
-    title: "10 Trending Wedding Decoration Ideas for 2025",
-    excerpt:
-      "Discover the latest trends in wedding décor that will make your special day unforgettable. From sustainable elements to bold color palettes...",
-    image: portfolio4,
-    category: "Weddings",
-    date: "January 15, 2025",
-    readTime: "5 min read",
-    slug: "trending-wedding-decoration-ideas-2025",
-  },
-  {
-    id: 2,
-    title: "How to Plan the Perfect Birthday Party on a Budget",
-    excerpt:
-      "Creating a magical birthday celebration doesn't have to break the bank. Learn our insider tips for stunning parties without overspending...",
-    image: portfolio2,
-    category: "Tips & Guides",
-    date: "January 10, 2025",
-    readTime: "4 min read",
-    slug: "plan-perfect-birthday-party-budget",
-  },
-  {
-    id: 3,
-    title: "Bridal Shower Themes That Will Wow Your Guests",
-    excerpt:
-      "From elegant tea parties to modern minimalist gatherings, explore the hottest bridal shower themes that celebrate the bride-to-be in style...",
-    image: portfolio1,
-    category: "Showers",
-    date: "January 5, 2025",
-    readTime: "6 min read",
-    slug: "bridal-shower-themes-wow-guests",
-  },
-  {
-    id: 4,
-    title: "The Ultimate Guide to Choosing Your Event Color Palette",
-    excerpt:
-      "Color sets the mood for your entire celebration. Master the art of choosing the perfect color scheme that reflects your personality and vision...",
-    image: portfolio3,
-    category: "Tips & Guides",
-    date: "December 28, 2024",
-    readTime: "7 min read",
-    slug: "guide-choosing-event-color-palette",
-  },
-];
 
 const BlogPage = () => {
   return (
@@ -79,7 +30,7 @@ const BlogPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              <motion.span 
+              <motion.span
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
@@ -124,7 +75,13 @@ const BlogPage = () => {
                 <h2 className="text-2xl md:text-3xl font-serif font-bold mt-2 mb-4">
                   {blogPosts[0].title}
                 </h2>
-                <p className="text-muted-foreground mb-6">{blogPosts[0].excerpt}</p>
+                <p className="text-muted-foreground mb-4">{blogPosts[0].excerpt}</p>
+                <div className="flex items-center gap-4 text-sm text-muted-foreground mb-2">
+                  <span className="flex items-center gap-1">
+                    <User size={16} />
+                    {blogPosts[0].author}
+                  </span>
+                </div>
                 <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
                   <span className="flex items-center gap-1">
                     <Calendar size={16} />
@@ -181,6 +138,12 @@ const BlogPage = () => {
                       <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
                         {post.excerpt}
                       </p>
+                      <div className="flex items-center gap-3 text-xs text-muted-foreground mb-2">
+                        <span className="flex items-center gap-1">
+                          <User size={14} />
+                          {post.author}
+                        </span>
+                      </div>
                       <div className="flex items-center gap-4 text-xs text-muted-foreground">
                         <span className="flex items-center gap-1">
                           <Calendar size={14} />
