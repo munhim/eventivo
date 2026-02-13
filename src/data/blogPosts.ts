@@ -3,6 +3,16 @@ import blogBabyShower from "@/assets/blog-baby-shower.jpg";
 import blogEventMistakes from "@/assets/blog-event-mistakes.jpg";
 import blogBirthdayTheme from "@/assets/blog-birthday-theme-v2.jpg";
 import blogWeddingTrends from "@/assets/blog-wedding-trends.jpg";
+import inlineLuxuryVenue from "@/assets/blog-inline-luxury-venue.jpg";
+import inlineLuxuryLighting from "@/assets/blog-inline-luxury-lighting.jpg";
+import inlineBohoShower from "@/assets/blog-inline-boho-shower.jpg";
+import inlineBalloonArch from "@/assets/blog-inline-balloon-arch.jpg";
+import inlineEventVision from "@/assets/blog-inline-event-vision.jpg";
+import inlineVendorCoord from "@/assets/blog-inline-vendor-coord.jpg";
+import inlineKidsBirthday from "@/assets/blog-inline-kids-birthday.jpg";
+import inlineBirthdayTable from "@/assets/blog-inline-birthday-table.jpg";
+import inlineSustainableWedding from "@/assets/blog-inline-sustainable-wedding.jpg";
+import inlineWeddingCeiling from "@/assets/blog-inline-wedding-ceiling.jpg";
 
 export interface BlogPost {
   id: number;
@@ -17,6 +27,20 @@ export interface BlogPost {
   authorRole: string;
   content: string;
 }
+
+// Image map for inline blog images referenced as [IMG:key]
+export const blogImageMap: Record<string, string> = {
+  "luxury-venue": inlineLuxuryVenue,
+  "luxury-lighting": inlineLuxuryLighting,
+  "boho-shower": inlineBohoShower,
+  "balloon-arch": inlineBalloonArch,
+  "event-vision": inlineEventVision,
+  "vendor-coord": inlineVendorCoord,
+  "kids-birthday": inlineKidsBirthday,
+  "birthday-table": inlineBirthdayTable,
+  "sustainable-wedding": inlineSustainableWedding,
+  "wedding-ceiling": inlineWeddingCeiling,
+};
 
 export const blogPosts: BlogPost[] = [
   {
@@ -58,6 +82,8 @@ You don't need everything to be extravagant. Instead, choose 2–3 elements wher
 ## 2. Choose a Venue That Does the Heavy Lifting
 
 A strategically chosen luxury event venue can instantly create an upscale atmosphere — without excessive decoration.
+
+[IMG:luxury-venue|A grand luxury event venue with chandeliers and elegant table settings]
 
 Look for:
 - Architectural beauty (grand staircases, chandeliers, high ceilings)
@@ -133,6 +159,8 @@ When guests feel personally valued rather than part of a crowd, the event experi
 
 If there's one investment that instantly transforms a space, it's lighting.
 
+[IMG:luxury-lighting|Dramatic event lighting with warm uplighting and statement chandeliers]
+
 Professional lighting can turn a basic hall into a premium luxury event center, enhance décor textures, improve photography, and create dramatic ambiance.
 
 Instead of spending excessively on florals, allocate part of your budget toward warm uplighting, pin-spot lighting on tables, statement chandeliers, and LED wall washes.
@@ -181,6 +209,8 @@ The landscape of baby shower decorations has evolved significantly. Today's cele
 
 Boho baby showers continue to dominate as one of the most popular decoration styles. This relaxed, earthy aesthetic combines natural textures, pampas grass, woven elements, and muted tones to create an effortlessly elegant atmosphere.
 
+[IMG:boho-shower|Boho chic baby shower setup with macrame, rattan furniture, and pampas grass]
+
 For your boho baby shower, incorporate rattan furniture, macramé wall hangings, and terracotta planters filled with succulents. Add touches of cream, taupe, and sage green through table linens and balloon arrangements.
 
 ### Enchanted Forest & Woodland Themes
@@ -208,6 +238,8 @@ The baby in bloom baby shower theme celebrates new life through beautiful floral
 ### Balloon Installations
 
 Balloon arches and garlands have become staples in baby shower decoration. These cost-effective installations create stunning visual impact and photograph beautifully. Mix different sizes and add metallic accents for dimension.
+
+[IMG:balloon-arch|Elegant pastel balloon arch installation for a baby shower celebration]
 
 ### Floral Arrangements
 
@@ -296,6 +328,8 @@ If you're currently planning an event, here are five common mistakes you should 
 
 Before booking a venue or contacting decorators, ask yourself: **What experience am I trying to create?**
 
+[IMG:event-vision|Event planning mood board with color swatches, fabric samples, and floral inspiration]
+
 One of the most common mistakes in event planning is moving forward without defining the purpose, mood, and overall tone. A vibrant children's birthday celebration requires a completely different approach than a sophisticated anniversary party or an intimate engagement party.
 
 When there is no defined concept, details like floral decoration, lighting, and seating arrangements feel scattered rather than cohesive. Even high-end décor loses impact if it doesn't connect to a central theme.
@@ -319,6 +353,8 @@ A controlled budget protects both your vision and your peace of mind.
 ## 3. Weak Vendor Coordination
 
 An event is only as strong as the team executing it.
+
+[IMG:vendor-coord|Event vendors coordinating setup with floral arrangements and table settings at a venue]
 
 Whether you are organizing a bridal shower, a milestone anniversary party, or a formal wedding ceremony, vendors must operate in harmony. Delays, miscommunication, or unclear instructions can disrupt even the most beautifully designed event.
 
@@ -389,6 +425,8 @@ For instance, a 21st birthday with a sophisticated cocktail lounge theme guides 
 
 The most successful birthday planning begins with understanding who you're celebrating. For kids' birthday planning, think about their current obsessions. Are they into dinosaurs, space, princesses, or superheroes? For a first birthday, consider that while the baby won't remember the day, photos will capture the moment forever, so choose something timeless and adorable.
 
+[IMG:kids-birthday|Colorful kids birthday party with themed decorations, balloons, and birthday cake]
+
 For milestone birthdays, the approach differs. Consider their hobbies, favorite sports teams, or dream destinations. A 50th birthday might incorporate nostalgia from their birth year or celebrate their life achievements with an elegant, sophisticated theme.
 
 ## Consider Your Venue and Season
@@ -418,6 +456,8 @@ For a 1st birthday, remember that babies don't need expensive entertainment. Sim
 ## Creating a Cohesive Theme Experience
 
 Once you've selected your theme, **consistency is key.** Your planning list should ensure the theme flows through every element. Invitations should hint at what's coming. Decorations should immerse guests in the experience. Food and drinks can incorporate theme colors or creative naming.
+
+[IMG:birthday-table|Cohesive birthday party table setting with coordinated theme and elegant decorations]
 
 Your planning sheet might include sections for themed invitations, coordinated tableware, matching decorations, and even costume requirements for guests. This attention to detail elevates a simple party into an unforgettable experience.
 
@@ -468,6 +508,8 @@ Most importantly, choose a theme that brings joy to the birthday person and crea
 
 Sustainability continues to dominate wedding planning trends in 2026. Modern couples are mindful of their environmental impact and are incorporating eco-friendly elements into every aspect of their wedding. From biodegradable confetti to reusable floral arrangements, sustainable decoration setups prove that style and responsibility can coexist beautifully.
 
+[IMG:sustainable-wedding|Eco-friendly wedding decoration with potted plants, local wildflowers, and natural elements]
+
 Professional wedding coordinator services are helping couples source local flowers, organic fabrics, and recyclable materials. Potted plants are replacing cut flowers, and décor elements are often repurposed from ceremony to reception. This thoughtful wedding planning approach not only reduces waste but also adds authenticity and warmth to the wedding day.
 
 ## Immersive & Interactive Installations
@@ -479,6 +521,8 @@ A skilled wedding coordinator planner ensures these installations integrate seam
 ## Statement Ceiling Designs
 
 Ceiling décor is one of the most dramatic trends shaping wedding planning this year. Rather than focusing only on tables and centerpieces, couples are transforming entire spaces from top to bottom. Hanging floral chandeliers, suspended greenery tunnels, and cascading drapery create breathtaking visual impact.
+
+[IMG:wedding-ceiling|Dramatic wedding ceiling decoration with hanging floral chandeliers and cascading greenery]
 
 Because of the complexity of these designs, many couples rely on wedding planning services and experienced wedding coordinator services to execute them safely and beautifully. The result is a fully immersive atmosphere where guests are surrounded by elegance from every angle.
 

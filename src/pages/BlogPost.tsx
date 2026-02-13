@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CommentSection } from "@/components/blog/CommentSection";
 import { Calendar, Clock, ArrowLeft, User } from "lucide-react";
-import { blogPosts } from "@/data/blogPosts";
+import { blogPosts, blogImageMap } from "@/data/blogPosts";
 
 const BlogPost = () => {
   const { slug } = useParams();
@@ -34,7 +34,29 @@ const BlogPost = () => {
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
 
-      if (line.startsWith("## ")) {
+      if (line.startsWith("[IMG:")) {
+        const match = line.match(/\[IMG:([^\]|]+)\|?([^\]]*)\]/);
+        if (match) {
+          const imageKey = match[1];
+          const altText = match[2] || imageKey;
+          const imageSrc = blogImageMap[imageKey];
+          if (imageSrc) {
+            elements.push(
+              <figure key={key++} className="my-8 rounded-xl overflow-hidden">
+                <img
+                  src={imageSrc}
+                  alt={altText}
+                  className="w-full h-auto rounded-xl"
+                  loading="lazy"
+                />
+                <figcaption className="text-sm text-muted-foreground mt-2 text-center italic">
+                  {altText}
+                </figcaption>
+              </figure>
+            );
+          }
+        }
+      } else if (line.startsWith("## ")) {
         elements.push(
           <h2 key={key++} className="text-2xl font-serif font-bold mt-10 mb-4">
             {line.replace("## ", "")}
